@@ -170,7 +170,7 @@ func (p *RSSFeedPlugin) processRSSV2Subscription(subscription *Subscription) err
 		if config.ShowDescription {
 			post = post + html2md.Convert(item.Description) + "\n"
 		}
-		if config.ShowEnclosure {
+		if config.ShowEnclosure && item.Enclosure.URL != "" {
 			if strings.Contains(item.Enclosure.Type, `image`) {
 				post = post + fmt.Sprintf(`![Included image](%s)`, item.Enclosure.URL) + "\n"
 			} else {
