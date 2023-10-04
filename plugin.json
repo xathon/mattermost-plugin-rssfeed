@@ -47,6 +47,13 @@
                 "default": true
             },
             {
+                "key": "ShowEnclosure",
+                "display_name": "Show Enclosure in RSS post",
+                "type": "bool",
+                "help_text": "(Optional) Specify, whether the enclosed item of an RSS feed should be posted. Images are posted inline, for other file types the URL is displayed.",
+                "default": true
+            },
+            {
                 "key": "ShowRSSLink",
                 "display_name": "Show Link in RSS post",
                 "type": "bool",
