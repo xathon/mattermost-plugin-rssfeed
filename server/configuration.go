@@ -22,6 +22,7 @@ type configuration struct {
 	ShowDescription   bool
 	ShowSummary       bool
 	ShowContent       bool
+	ShowEnclosure     bool
 	ShowRSSLink       bool
 	ShowAtomLink      bool
 	ShowRSSItemTitle  bool
